@@ -49,6 +49,7 @@ export class AppComponent {
       this.adminInputVals.splice(i, 1);
       this.parentAdminsCount = this.parentAdminsCount - 1;
     }
+    
   }
-  
+
 }
