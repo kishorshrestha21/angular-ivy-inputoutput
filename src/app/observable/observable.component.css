@@ -1,0 +1,31 @@
+
+.table{
+width: 80%;
+  margin:auto;
+}
+table,
+th,
+td {
+  border: 1px solid rgb(209, 204, 204);
+  padding: 10px;
+}
+table {
+  border-collapse: collapse;
+  margin-bottom: 10px;
+    margin:auto;
+ 
+}
+
+th{
+  background-color: #333;
+  color:cornsilk
+}
+
+tbody tr:nth-child(even){
+  background-color: rgb(236, 231, 231);
+}
+
+h2{
+  text-align: center;
+  color:blueviolet
+}

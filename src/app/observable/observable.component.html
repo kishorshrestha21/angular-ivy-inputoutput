@@ -1,0 +1,27 @@
+
+<div class="table">
+  <h2>
+  Observable 
+  </h2>
+  <table>
+    <thead>
+      <th>Name</th>
+      <th>Username</th>
+      <th>Email</th>
+      <th>Street</th>
+      <th>City</th>
+      <th>Website</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of employees">
+          <td>{{employee.name}}</td>
+          <td>{{employee.username}}</td>
+          <td>{{employee.email}}</td>
+          <td>{{employee.address.street}}</td>
+          <td>{{employee.address.city}}</td>
+          <td>{{employee.website}}</td>
+        </tr>
+    </tbody>
+    
+  </table>
+</div>

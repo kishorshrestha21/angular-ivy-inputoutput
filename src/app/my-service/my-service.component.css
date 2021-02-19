@@ -1,0 +1,16 @@
+.myService{
+  padding: 20px;
+  border:1px solid rgb(209, 207, 207);
+  border-radius: 5px;
+ 
+}
+
+.myService h1 {
+  text-align: center;
+  color:brown
+}
+.insideService{
+   display: flex;
+  justify-content: space-around;
+  
+}

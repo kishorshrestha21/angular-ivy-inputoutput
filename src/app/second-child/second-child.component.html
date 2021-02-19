@@ -1,0 +1,16 @@
+<div class="secondchild "
+	        [ngClass]="{
+                        boxGreen:boxColor == 'green',
+                        boxBlue:boxColor =='blue'
+                        }">
+		<h2>{{textHead}}</h2>
+		<input type="text" placeholder="{{pH}}" #inputVal>
+    <button (click)="onSendData(inputVal)">{{btnText}}</button>
+     <div class="count" *ngIf="count">
+                            <span>Total Count <strong>{{count}}</strong></span>
+                          </div>
+<!-- <p>{{getUserCountFromParent}}</p> -->
+
+	</div>
+  
+  

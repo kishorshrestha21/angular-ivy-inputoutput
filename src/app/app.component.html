@@ -1,0 +1,75 @@
+<h2>{{name}}</h2>
+<!-- <p>{{dataFromChild}}</p> -->
+
+<div class="table">
+  <div class="tableWrap">
+    <h2>User</h2>
+    <!-- <p>{{userCounts}}</p> -->
+    <p>{{parentUsersCount}}</p>
+
+    <table>
+      <thead>
+        <th>Name</th>
+        <th>Remove</th>
+      </thead>
+      <tr *ngFor="let userInputVal of userInputVals index as i">
+        <td>{{userInputVal}}</td>
+        <td>
+          <button class="removeBtn" (click)="removeUser(i)">REMOVE</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="tableWrap">
+    <h2>Admin</h2>
+    <!-- <p>{{adminCounts}}</p> -->
+    <p>{{parentAdminsCount}}</p>
+    <table>
+      <thead>
+        <th>Name</th>
+        <th>Remove</th>
+      </thead>
+      <tr *ngFor="let adminInputVal of adminInputVals index as i">
+        <td>{{adminInputVal}}</td>
+        <td>
+          <button class="removeBtn" (click)="removeAdmin(i)">REMOVE</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="appChildWrap">
+  <app-second-child
+    [boxColor]="'green'"
+    [textHead]="'User'"
+    [btnText]="'Create User'"
+    [pH]="'Create User'"
+    (getVal)="getUserVal($event)"
+    [count]="parentUsersCount"
+    (newCount)="getNewUsersCount($event)"
+  >
+  </app-second-child>
+  <app-second-child
+    [boxColor]="'blue'"
+    [textHead]="'Admin'"
+    [btnText]="'Create Admin'"
+    [pH]="'Create Admin'"
+    (getVal)="getAdminVal($event)"
+    [count]="parentAdminsCount"
+    (newCount)="getNewAdminsCount($event)"
+  >
+  </app-second-child>
+
+ 
+</div>
+
+<div class="mainService">
+   <app-my-service> </app-my-service>
+   <app-observable></app-observable>
+</div>
+
+<!-- <app-child [getData]=" parentData " (sendChildData)="onGetData($event)">
+</app-child>
+
+<app-parent-count></app-parent-count> -->

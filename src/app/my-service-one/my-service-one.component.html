@@ -1,0 +1,12 @@
+<div class="serviceOne">
+  <h2>Service One</h2>
+
+  <ul *ngFor="let myData of myDatas; index as i">
+    <li>{{i+1}}</li>
+    <li>{{myData.name}}</li>
+    <li>{{myData.age}}</li>
+    <li>{{myData.city}}</li>
+  </ul>
+
+    <button (click)="messageAlert()">Subscribe NewsLetter</button>
+</div>

@@ -1,0 +1,16 @@
+.parentChild{
+  padding: 20px;
+  border: 1px solid rgb(189, 181, 181);
+  border-radius: 5px;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+button{
+  background-color: green;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}

@@ -1,0 +1,29 @@
+
+<div class="serviceTwo">
+  <h2>Service Two</h2>
+
+<table>
+  <thead>
+    <th>S.No</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>City</th>
+  </thead>
+  <tbody>
+    <tr *ngFor ="let myData of myDatas; index as i">
+      <td>{{i+1}}</td>
+      <td>{{myData.name}}</td>
+      <td>{{myData.age}}</td>
+      <td>{{myData.city}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- <table>
+  <tr *ngFor="let employee of employees">
+    <td>{{employee .name}}</td>
+    <td>{{employee .name}}</td>
+  </tr>
+</table> -->
+<button (click) ="messageAlert()">Subcribe Newsletter</button>
+</div>
